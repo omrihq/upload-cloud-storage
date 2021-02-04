@@ -52,7 +52,7 @@ export class UploadHelper {
       gzip: boolean;
       destination?: string;
     }
-    const options: UploadOptions = { gzip: true };
+    const options: UploadOptions = { gzip: false };
     if (destination) {
       // If obj prefix is set, then extract filename and append to prefix.
       options.destination = `${destination}/${path.posix.basename(filename)}`;
